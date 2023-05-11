@@ -11,7 +11,7 @@
  * The starting Unicode of Hangul syllables.
  * The Unicode value of "가".
  */
-export const SYLLABLES_START = 0xac00;
+export const HANGUL_SYLLABLES_START = 0xac00;
 /**
  * **한국어**
  *
@@ -25,7 +25,7 @@ export const SYLLABLES_START = 0xac00;
  * The ending Unicode of Hangul syllables.
  * The Unicode value of "힣".
  */
-export const SYLLABLES_END = 0xd7a3;
+export const HANGUL_SYLLABLES_END = 0xd7a3;
 /**
  * **한국어**
  *
@@ -45,7 +45,7 @@ export const SYLLABLES_END = 0xd7a3;
  *
  * ∴ 19 × 21 × (27 + 1) = 11,172
  */
-export const SYLLABLES_COUNT = 11172;
+export const HANGUL_SYLLABLES_COUNT = 11172;
 
 /**
  * **한국어**
@@ -61,7 +61,7 @@ export const SYLLABLES_COUNT = 11172;
  *
  * Sorted in Unicode order.
  */
-export const CONSONANTS = [
+export const HANGUL_CONSONANTS = [
   "ㄱ",
   "ㄲ",
   "ㄳ",
@@ -109,7 +109,7 @@ export const CONSONANTS = [
  *
  * Sorted in Unicode order.
  */
-export const LEADING_CONSONANTS = [
+export const HANGUL_LEADING_CONSONANTS = [
   "ㄱ",
   "ㄲ",
   "ㄴ",
@@ -148,7 +148,7 @@ export const LEADING_CONSONANTS = [
  *
  * Sorted in Unicode order.
  */
-export const TRAILING_CONSONANTS = [
+export const HANGUL_TRAILING_CONSONANTS = [
   "ㄱ",
   "ㄲ",
   "ㄳ",
@@ -195,7 +195,7 @@ export const TRAILING_CONSONANTS = [
  *
  * Sorted in Unicode order.
  */
-export const VOWELS = [
+export const HANGUL_VOWELS = [
   "ㅏ",
   "ㅐ",
   "ㅑ",
@@ -232,7 +232,7 @@ export const VOWELS = [
  * List of disassembled Hangul consonants.
  * Disassemble composite consonant except "ㄲ", "ㄸ", "ㅃ", "ㅆ", "ㅉ".
  */
-export const DISASSEMBLED_CONSONANTS_BY_CONSONANT = {
+export const DISASSEMBLED_HANGUL_CONSONANTS_BY_CONSONANT = {
   ㄱ: "ㄱ",
   ㄲ: "ㄲ",
   ㄳ: "ㄱㅅ",
@@ -277,7 +277,7 @@ export const DISASSEMBLED_CONSONANTS_BY_CONSONANT = {
  * List of disassembled Hangul vowels.
  * Disassemble composite vowel except "ㅐ", "ㅒ", "ㅔ", "ㅖ".
  */
-export const DISASSEMBLED_VOWELS_BY_VOWEL = {
+export const DISASSEMBLED_HANGUL_VOWELS_BY_VOWEL = {
   ㅏ: "ㅏ",
   ㅐ: "ㅐ",
   ㅑ: "ㅑ",
