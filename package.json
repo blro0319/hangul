@@ -1,0 +1,36 @@
+{
+  "name": "@blro/hangul",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blro0319/hangul.git",
+    "directory": "packages/vue"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/hangul.umd.js",
+  "module": "dist/hangul.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/hangul.es.js",
+      "require": "./dist/hangul.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^2.0.0",
+    "@types/node": "^20.1.2",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.5",
+    "vite-plugin-dts": "^2.3.0",
+    "vitest": "^0.31.0"
+  }
+}
