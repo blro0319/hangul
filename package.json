@@ -11,18 +11,19 @@
   "files": [
     "dist"
   ],
-  "main": "dist/hangul.umd.js",
-  "module": "dist/hangul.es.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/hangul.umd.cjs",
+  "module": "dist/hangul.js",
+  "types": "dist/types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/hangul.es.js",
-      "require": "./dist/hangul.umd.js"
+      "import": "./dist/hangul.js",
+      "require": "./dist/hangul.umd.cjs"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && npm run build:types",
+    "build:types": "tsc --project tsconfig.build.json --declaration --emitDeclarationOnly --outDir dist/types",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -30,7 +31,6 @@
     "@types/node": "^20.1.2",
     "typescript": "^5.0.4",
     "vite": "^4.3.5",
-    "vite-plugin-dts": "^2.3.0",
     "vitest": "^0.31.0"
   }
 }
