@@ -12,3 +12,4 @@ export * from "./isHangulLeadingConsonant";
 export * from "./isHangulSyllable";
 export * from "./isHangulTrailingConsonant";
 export * from "./isHangulVowel";
+export * from "./matchLeadingConsonants";
