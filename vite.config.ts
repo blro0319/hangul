@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import { resolve } from "path";
 import { defineConfig } from "vite";
 
@@ -8,5 +10,8 @@ export default defineConfig({
       name: "@blro/hangul",
       fileName: "hangul",
     },
+  },
+  test: {
+    globals: true,
   },
 });

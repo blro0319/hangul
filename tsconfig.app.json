@@ -3,7 +3,7 @@
   "exclude": ["src/**/__tests__/*", "src/**/*.cy.ts"],
   "compilerOptions": {
     "composite": true,
-    "types": ["node"],
+    "types": ["node", "vitest/globals"],
     "strict": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
