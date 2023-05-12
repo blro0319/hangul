@@ -50,6 +50,114 @@ export const HANGUL_SYLLABLES_COUNT = 11172;
 /**
  * **한국어**
  *
+ * 한글 자음의 시작 유니코드.
+ * "ㄱ"의 유니코드 값입니다.
+ *
+ * ---
+ *
+ * **English**
+ *
+ * The starting Unicode of Hangul consonants.
+ * The Unicode value of "ㄱ".
+ */
+export const HANGUL_CONSONANTS_START = 0x3131;
+/**
+ * **한국어**
+ *
+ * 한글 자음의 끝 유니코드.
+ * "ㅎ"의 유니코드 값입니다.
+ *
+ * ---
+ *
+ * **English**
+ *
+ * The ending Unicode of Hangul consonants.
+ * The Unicode value of "ㅎ".
+ */
+export const HANGUL_CONSONANTS_END = 0x314e;
+/**
+ * **한국어**
+ *
+ * 한글 자음의 개수.
+ * 초성과 종성에 사용될 수 있는 모든 자음의 개수입니다.
+ *
+ * ---
+ *
+ * **English**
+ *
+ * The number of Hangul consonants.
+ * The number of all consonants that can be used in leading and trailing consonants.
+ */
+export const HANGUL_CONSONANTS_COUNT = 30;
+/**
+ * **한국어**
+ *
+ * 한글 초성의 개수.
+ *
+ * ---
+ *
+ * **English**
+ *
+ * The number of Hangul leading consonants.
+ */
+export const HANGUL_LEADING_CONSONANTS_COUNT = 19;
+/**
+ * **한국어**
+ *
+ * 한글 종성의 개수.
+ *
+ * ---
+ *
+ * **English**
+ *
+ * The number of Hangul trailing consonants.
+ */
+export const HANGUL_TRAILING_CONSONANTS_COUNT = 27;
+
+/**
+ * **한국어**
+ *
+ * 한글 모음의 시작 유니코드.
+ * "ㅏ"의 유니코드 값입니다.
+ *
+ * ---
+ *
+ * **English**
+ *
+ * The starting Unicode of Hangul vowels.
+ * The Unicode value of "ㅏ".
+ */
+export const HANGUL_VOWELS_START = 0x314f;
+/**
+ * **한국어**
+ *
+ * 한글 모음의 끝 유니코드.
+ * "ㅣ"의 유니코드 값입니다.
+ *
+ * ---
+ *
+ * **English**
+ *
+ * The ending Unicode of Hangul vowels.
+ * The Unicode value of "ㅣ".
+ */
+export const HANGUL_VOWELS_END = 0x3163;
+/**
+ * **한국어**
+ *
+ * 한글 모음의 개수.
+ *
+ * ---
+ *
+ * **English**
+ *
+ * The number of Hangul vowels.
+ */
+export const HANGUL_VOWELS_COUNT = 21;
+
+/**
+ * **한국어**
+ *
  * 한글 자음 목록.
  *
  * 유니코드 표 순서대로 정렬되어 있습니다.
