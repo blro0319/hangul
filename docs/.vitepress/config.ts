@@ -5,7 +5,6 @@ export default defineConfig({
   description: "Handles Korean with JavaScript",
   themeConfig: {
     nav: [
-      { text: "Home", link: "/" },
       { text: "Get Started", link: "/get-started/" },
       { text: "API", link: "/api/" },
     ],
