@@ -8,7 +8,9 @@ import {
   isHangulSyllable,
 } from "..";
 
-export function disassembleHangulSyllable(letter: string) {
+export function disassembleHangulSyllable(
+  letter: string
+): [string, string, string] | undefined {
   if (!isHangulSyllable(letter)) return;
 
   const code = letter.charCodeAt(0) - HANGUL_SYLLABLES_START;
