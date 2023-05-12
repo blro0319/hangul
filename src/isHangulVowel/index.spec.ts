@@ -9,11 +9,17 @@ describe("isHangulVowel", () => {
   });
 
   it('"ㅏ" 앞의 문자', () => {
-    expect(isHangulVowel("a")).toBe(false);
-    expect(isHangulVowel("ㄱ")).toBe(false);
+    const left = String.fromCharCode("ㅏ".charCodeAt(0) - 1);
+    expect(isHangulVowel(left), "Left").toBe(false);
+
+    expect(isHangulVowel("a"), "a").toBe(false);
+    expect(isHangulVowel("ㄱ"), "ㄱ").toBe(false);
   });
   it('"ㅣ" 뒤의 문자', () => {
-    expect(isHangulVowel("ힰ")).toBe(false);
-    expect(isHangulVowel("力")).toBe(false);
+    const right = String.fromCharCode("ㅣ".charCodeAt(0) + 1);
+    expect(isHangulVowel(right), "Right").toBe(false);
+
+    expect(isHangulVowel("ힰ"), "ힰ").toBe(false);
+    expect(isHangulVowel("力"), "力").toBe(false);
   });
 });
