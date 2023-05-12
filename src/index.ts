@@ -1,6 +1,7 @@
 export * from "./constants";
 export * from "./disassembleHangulConsonant";
 export * from "./disassembleHangulSyllable";
+export * from "./disassembleHangulToGroups";
 export * from "./disassembleHangulVowel";
 export * from "./isHangul";
 export * from "./isHangulConsonant";
