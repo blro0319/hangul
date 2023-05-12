@@ -4,6 +4,7 @@ export * from "./disassembleHangulConsonant";
 export * from "./disassembleHangulSyllable";
 export * from "./disassembleHangulToGroups";
 export * from "./disassembleHangulVowel";
+export * from "./hangulIncludes";
 export * from "./isHangul";
 export * from "./isHangulConsonant";
 export * from "./isHangulLeadingConsonant";
