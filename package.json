@@ -24,13 +24,17 @@
     "dev": "vite",
     "build": "tsc && vite build && npm run build:types",
     "build:types": "tsc --project tsconfig.build.json --declaration --emitDeclarationOnly --outDir dist/types",
-    "test": "vitest"
+    "test": "vitest",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
     "@tsconfig/node18": "^2.0.0",
     "@types/node": "^20.1.2",
     "typescript": "^5.0.4",
     "vite": "^4.3.5",
+    "vitepress": "^1.0.0-alpha.75",
     "vitest": "^0.31.0"
   }
 }
