@@ -16,11 +16,14 @@ describe("matchLeadingConsonants", () => {
     ).toBe(true);
     expect(matchLeadingConsonants("훈민정음", "ㅇ"), "훈민정음/ㅇ").toBe(true);
 
-    expect(matchLeadingConsonants("훈민정음", "훈민정음/ㄷ")).toBe(false);
-    expect(matchLeadingConsonants("훈민정음", "훈민정음/ㅁㅎ")).toBe(false);
-    expect(matchLeadingConsonants("훈민정음", "훈민정음/ㅎㅁㅈㅇㅎ")).toBe(
+    expect(matchLeadingConsonants("훈민정음", "ㄷ"), "훈민정음/ㄷ").toBe(false);
+    expect(matchLeadingConsonants("훈민정음", "ㅁㅎ"), "훈민정음/ㅁㅎ").toBe(
       false
     );
+    expect(
+      matchLeadingConsonants("훈민정음", "ㅎㅁㅈㅇㅎ"),
+      "훈민정음/ㅎㅁㅈㅇㅎ"
+    ).toBe(false);
   });
 
   it("띄어쓰기가 포함된 한글 음절", () => {
