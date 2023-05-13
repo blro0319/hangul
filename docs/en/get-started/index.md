@@ -1,6 +1,6 @@
-# 시작하기
+# Get Started
 
-## 설치
+## Installation
 
 ::: code-group
 
@@ -18,7 +18,7 @@ yarn add @blro/hangul
 
 :::
 
-## 사용 예시
+## Usage Example
 
 ```ts
 import { matchLeadingConsonants } from "@blro/hangul";
